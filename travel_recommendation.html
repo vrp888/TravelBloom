@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="TravelBloom">
+            <span>TravelBloom</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('about')">About Us</a>
+            <a href="#" onclick="showSection('contact')">Contact Us</a>
+        </div>
+        <div class="search-container">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" id="search" placeholder="Enter a destination or keyword" name="search">
+            <button onclick="search()">Search</button>
+            <button class="clear" onclick="resetSearch()">Clear</button>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="social-icons">
+            <a href="#"><img src="img/icon-x.png" alt="X"></a>
+            <a href="#"><img src="img/icon-fb.png" alt="Facebook"></a>
+            <a href="#"><img src="img/icon-ig.png" alt="Instagram"></a>
+            <a href="#"><img src="img/icon-yt.png" alt="YouTube"></a>
+        </div>
+        
+        <!-- The real content goes here -->
+        <div id="home" class="section hero-content active">
+            <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+            <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+            <a href="#" class="btn">BOOK NOW</a>
+        </div>
+        <div id="about" class="section hero-content hero-center hero-wide">
+            <h1>ABOUT US</h1>
+            <p>Welcome to TravelBloom! We are a team of passionate individuals dedicated to providing excellent services and products to our customers. Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <strong>putting our customers first</strong> and <strong>working together</strong> to achieve our goals. Feel free to explore our website to learn more about what we offer!</p>
+            <div class="team">
+                <h1>Our Team</h1>
+                <div class="team-member">
+                    <h3>John Doe</h3>
+                    <p>John is responsible for management</p>
+                    <div class="role">CEO</div>
+                </div>
+                <div class="team-member">
+                    <h3>Celina Thomas</h3>
+                    <p>Celina Thomas is responsible for services</p>
+                    <div class="role">Team Lead</div>
+                </div>
+                <div class="team-member">
+                    <h3>Mike Tysen</h3>
+                    <p>Mike Tysen is responsible for delivery</p>
+                    <div class="role">Delivery Head</div>
+                </div>
+            </div>
+        </div>
+    <div id="contact" class="section">
+        
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
