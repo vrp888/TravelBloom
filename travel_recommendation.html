@@ -38,10 +38,18 @@
         <!-- The real content goes here -->
         <div id="home" class="section active">
             <div class="hero-content">
-                <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
-                <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
-                <a href="#" class="btn">BOOK NOW</a>
+                <div class="home-content">
+                    <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+                    <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                    <a href="#" class="btn">BOOK NOW</a>
+                </div>
+                <div class="recommendation-content">
+                    <div id="recommendations" class="recommendations">
+                        <!-- Recommendation cards to be populated -->
+                    </div>
+                </div>
             </div>
+            
         </div>
         <div id="about" class="section">
             <div class="hero-content hero-center hero-wide">
@@ -68,12 +76,12 @@
             </div>
         </div>
         <div id="contact" class="section">
-            <div class="hero-content hero-center">
+            <div class="hero-content hero-center hero-wide">
                 <h1>CONTACT US</h1>
                 <p>Get in touch with us for more information and support.</p>
             </div>
             <div class="contact-form">
-                <form action="#" method="post">
+                <form action="#" method="post" onsubmit="handleSubmit(event)">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <textarea name="message" rows="5" placeholder="Message" required></textarea>
