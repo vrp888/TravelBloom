@@ -4,7 +4,7 @@ body {
 }
 
 div > * {
-    vertical-align:middle;
+    vertical-align: top;
 }
 
 .navbar {
@@ -123,7 +123,7 @@ div > * {
     margin-left: 70px;
 }
 
-.hero-content > div:first-child {
+.hero-content > *:first-child {
     margin-top: 75px;
 }
 
@@ -218,7 +218,7 @@ div > * {
 
 .social-icons {
     position: absolute;
-    top: 50%;
+    top: 300px;
     left: 20px;
     transform: translateY(-50%);
     z-index: 2;
